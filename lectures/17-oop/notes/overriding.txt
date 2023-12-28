@@ -22,3 +22,5 @@ that determines which version of an overridden method will be executed.
 If B extends A then you can override a method in A through B with changing the return type of method to B.
 
 methods which are declared as final in the parent class cannot be overridden by the child class.
+Since the there is no confusion of which method has to be called at runtime, as there is only one implementation of this method(no child has overridden as its final), this is known as early binding.
+the usual way of figuring out which implementation(method) to be invoked at run time is known as late binding.
